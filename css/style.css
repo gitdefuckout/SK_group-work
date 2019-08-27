@@ -19,14 +19,12 @@ width: 100%;
 width: 220px;
 }
 
-div.folio-23 {
-margin-top: 0;
+.fotki > div > img{
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
 
-div.fotki {
-padding-bottom: 20px;
-justify-content: center;
-}
 
 a.btn-all {
 margin-top: 20px;
@@ -70,13 +68,13 @@ a {
 header{
 
 max-width: 1440px;
-height: 900px;
+max-height: 900px;
 
 }
 
 .tit-main {
 max-width: 661px;
-height: 900px;
+max-height: 900px;
 background: #FFFFFF;
 margin: 0;
 padding: 0;
@@ -155,9 +153,9 @@ padding: 0;
 background: linear-gradient(49.98deg, #FF9C53 10.33%, #FF766C 66.49%);
 }
 */
-.main-photo,
-.tit-main {
-display: inline-block;
+.menu {
+display: inline-flex;
+
 }
 
 img .tit-main {
@@ -323,35 +321,36 @@ margin-bottom: 49px;
 }
 
 .fotki {
-display: flex;
-flex-wrap: wrap;
 max-width: 1440px;
+display: grid;
+grid-gap: 35px;
+grid-template-columns: repeat(3, 1fr);
+grid-auto-rows: 400px;
+grid-auto-flow: dense;
 margin-left: 122px;
 margin-right:125px;
 }
 
+
+
 .folio-1 {
-margin-right: 42px;
 max-width: 665px;
 height: 408px;
+grid-column: span 2;
+grid-row: span 1;
 }
 
 .folio-4 {
+grid-column: span 1;
+grid-row: span 2;
 max-width: 486px;
 max-height: 703.55px;
-}
-
-.folio-23 {
-display: flex;
-flex-wrap: wrap;
-margin-top: -267px;
-align-items: flex-start;
 }
 
 .folio-2 {
 max-width: 281px;
 max-height: 267px;
-margin-right: 33px;
+
 }
 
 .folio-3 {
@@ -364,8 +363,7 @@ max-height: 267px;
 display: flex;
 padding-left: 33px;
 width: 240px;
-margin-top: 75px;
-margin-left: 602px;
+margin-left: 40%;
 margin-bottom: 130px;
 }
 
@@ -437,7 +435,7 @@ margin-bottom: 87.73px;
 display: grid;
 grid-gap: 63px;
 grid-template-columns: 1fr 1fr;
-grid-template-rows: 774px;
+grid-auto-rows: 774px;
 margin-left: 125px;
 margin-right: 121px;
 }
@@ -446,8 +444,6 @@ margin-right: 121px;
 max-width: 566px;
 font-size: 28px;
 }
-
-
 
 
 
